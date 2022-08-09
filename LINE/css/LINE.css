@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR);
+body, section, p, div,ul, li { 
+    /* body, section 등의 모든 태그의 모든 여백 삭제 */
+    padding: 0;
+    margin: 0;
+}
+ul, li{
+    list-style: none; /*ul태그 앞에 동그라미 삭제*/
+}
+body{
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3d3d3d;
+    letter-spacing: -0.05em;
+}
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+
+}
+strong {
+    color: #07B53B;
+    font-size: 20px;
+    font-weight: 700;
+}
+p {
+    font-size: 15px;
+    margin: 18px 0 0 0;
+}
+.wrapper a{
+    display: inline-block;
+    float: left;
+    padding: 6px 21px;
+    margin: 21px 5px 0 0;
+    border: 1px solid #666666;
+}
