@@ -1,0 +1,42 @@
+@import url(default.css);
+header {
+    height: 100px;
+}
+header h1 {
+    float: left;
+    margin: 33px;
+}
+header nav {
+    float: right;
+    max-width: 18px 0 0 0;
+}
+header nav ul li {
+    float: left;
+}
+header nav ul li a {
+    display: block;
+    padding: 34px 25px;
+    color: #1d1d1d;
+    font-size: 20px;
+    font-weight: 700;
+}
+.visual h2 {
+    margin: 95px 0 0 0;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+.visual ul li {
+    float: left;
+    width: 260px;
+    margin: 34px 50px 0 0;
+}
+.visual strong {
+    margin: 17px 0 21px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.visual p{
+    font-size: 15px;
+    font-weight: 400;
+}
