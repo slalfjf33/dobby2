@@ -64,6 +64,17 @@ header .tnb button span {
     display: none;
 }
 
+header.fixed { /* header가 고정됏을때 jquery가 class를 추가 */
+    background-color: #FFF;
+}
+header.fixed .gnb ul li a {
+    color: #1d1d1d;
+}
+header.fixed .tnb button {
+    color: #1d1d1d;
+}
+
+
 /* media 시작*/
 
 @media screen and (max-width:640px) {
@@ -96,6 +107,9 @@ header .tnb button span {
     }
     header .tnb {
         display: none;
+    }
+    header.fixed .gnb button i {
+        color: #1d1d1d;
     }
 }
 
@@ -285,3 +299,85 @@ header .tnb button span {
         width: 420px;
     }
 /* media 종료 */
+
+.purpose {
+    position: relative;
+    height: 357px;
+    margin: 140px 0 0 0;
+    background-image: url(../images/purp_bg.png) ;no-repeat center center / cover;
+    color: #FFF;
+    text-align: center;
+}
+.purpose::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.2);
+    content: "";
+}
+.purpose .inner {
+    position: relative;
+    z-index: 1;
+}
+.purpose h2 {
+    padding: 100px 0 51px 0;
+    font-size: 35px;
+    line-height: 1.28;
+}
+.purpose h2 strong {
+    position: relative;
+}
+.purpose h2 strong::before {
+    left: 83px;
+    top: -20px;
+    background-image: url(../images/purp_bg_left.png); no-repeat center center / cover ;
+    content: "";
+
+}
+.purpose h2 strong::after {
+    right: -70px;
+    bottom: -10px;
+    background-image: url(../images/purp_bg_right.png); no-repeat center center / cover ;
+    content: "";
+}
+.purpose h2 strong::before, .purpose h2::after {
+    position: absolute;
+    color:  rgba(255,255,255,0.5);
+    width: 60px;
+    height: 60px;
+    font-size: 130px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+@media screen and (max-width:640px){
+    .purpose {
+        height: auto;
+        padding: 0 0 40px 0;
+        margin: 140px 0 0 0;
+    }
+    .purpose::before {
+        background-color: rgb(0,0,0,0.3);
+    }
+    .purpose h2 {
+        padding: 78px 0 74px 0;
+        font-size: 25px;
+    }
+    .purpose h2 strong::before {
+        left: -28px;
+        top: -51px;
+        background-size: 35px auto;
+    
+    }
+    .purpose h2 strong::after {
+        right: -70px;
+        bottom: -49px;
+        background-size: 35px auto;
+    }
+    .purpose h2 span {
+        display: block;
+    }
+}
