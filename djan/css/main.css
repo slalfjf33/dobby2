@@ -1,1 +1,153 @@
 @import url('default.css');
+
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+}
+header .logo {
+    float: left;
+    margin: 50px 0 128px 0;
+}
+header .gnb {
+    float: left;
+}
+header .gnb > ul > li {
+    float: left;
+    width: 200px;
+    text-align: center;
+}
+header .gnb > ul > li > a{
+    display: block;
+    line-height: 100px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 100px;
+    /* header의 높이가 100px - 글자를 header 위아래 가운데 */
+    white-space: nowrap;
+    /* 행간으로 위아래 여백을 처리해버리는 경우
+        절대 2줄이 되지 못하도록 white-space:nowrap(줄바꿈 금지)*/
+}
+header .gnb > ul > li > ul {
+    /* 2차 메뉴 */
+    display: none;
+}
+header .gnb .gnb_open {
+    display: none; /* 모바일 버튼 */
+}
+header .gnb .gnb_close {
+    display: none; /* 모바일 버튼 */
+}
+header .tnb {
+    float: right;
+    margin: 54px 0 0 0;
+}
+header .tnb a {
+    display: block;
+    float: left;
+}
+header .tnb a span {
+    display: none;
+}
+header .tnb a i {
+    font-size: 24px;
+    margin: 0 0 0 25px;
+}
+.visual {
+    position: relative;
+    height: 1000px;
+    background: url(../images/visual_bg.png) no-repeat center center / cover;
+    color: #fff;
+    text-align: right;
+}
+.visual .inner{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    /* margin: -220px 0 0 0; */
+    transform: translate(0,-188px);
+}
+.visual h2 {
+    margin: 0 0 70px;
+    font-size: 50px;
+    font-weight: 100;
+}
+.visual h2 strong {
+    font-weight: 700;
+}
+.visual a {
+    display: inline-block;
+    padding: 2px 5px 2px 0;
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+}
+
+
+/* 모바일 시작 */
+
+@media screen and (max-width:640px){
+    .visual {
+        height: 760px;
+        background-position: right 43% center;
+    }
+    .visual .inner{
+        /* margin: -220px 0 0 0; */
+        transform: translate(0,-200px);
+    }
+    .visual h2 {
+        margin: 0 0 33px;
+        font-size: 30px;
+    }
+}
+/* 모바일 종료 */
+
+
+/* 모바일 시작 */
+
+@media screen and (max-width:640px) {
+    header {
+        height: 45px;
+    }
+    header .logo {
+        margin: 15px 0 0 0;
+    }
+    header .logo a img {
+        width: 118px;
+    }
+    header .gnb {
+        float: right;
+        margin: 21px 0 0 0;
+    }
+    header .gnb > ul {
+        display: none;
+    }
+    header .gnb .gnb_open {
+        display: block; /* 모바일 버튼 */
+    }
+    header .gnb .gnb_open span {
+        display: none;
+    }
+    header .gnb .gnb_open i {
+        font-size: 20px;
+    }
+    header .tnb {
+        display: none;
+    }
+}
+
+/* 모바일 종료 */
+
+.care .tit h2 {
+    float: left;
+    color: #000;
+    font-size: 60px;
+    font-weight: 700;
+}
+.care .tit p {
+    float: left;
+}
